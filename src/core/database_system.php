@@ -199,7 +199,7 @@
 	class MySQLDatabase extends Database {
 
 		protected function createConnection($host, $port, $user, $password, $database) {
-			$db  = mysqli_connect($host, $user, $password, $port);
+			$db  = mysqli_connect($host, $user, $password, null, $port);
 			if (mysqli_connect_errno()) {
 				echo "Connection failed: " . mysqli_connect_error();
 			} else {
