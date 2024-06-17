@@ -1,4 +1,4 @@
 FROM php:7.4.3-apache
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+RUN docker-php-ext-install mysqli
 COPY src ./
 CMD ["apache2-foreground"]
