@@ -7,7 +7,6 @@
 
 	define("PARAMETER_PREFIX_ATTRIBUTE", "attribute_");
 	define("ADMINISTRATION_PASSWORD", $_ENV["ADMIN_PASSWORD"]);
-	define("SITE_PASSWORD", $_ENV["SITE_PASSWORD"]);
 	setlocale(LC_TIME, "de_DE.UTF-8", "deu_deu");
 
 	loadRows("administration_meta", $administrationMeta, "'key'", "key");

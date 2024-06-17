@@ -21,7 +21,6 @@ pipeline {
                 dir('docker') {
                     withCredentials([
                         string(credentialsId: 'db-root-password', variable: 'DB_ROOT_PASSWORD'),
-                        string(credentialsId: 'site-password', variable: 'SITE_PASSWORD'),
                         string(credentialsId: 'admin-password', variable: 'ADMIN_PASSWORD')
                     ]) {
                         sh 'docker compose build --no-cache'
