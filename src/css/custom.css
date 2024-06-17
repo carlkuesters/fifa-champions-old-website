@@ -1,0 +1,589 @@
+input, textarea{
+	font-family:'Open Sans', sans-serif;
+}
+
+#banner_text, #home_message{
+	background:rgba(255, 255, 255, 0.6);
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+}
+
+#banner_text p, #home_message p{
+	margin:0px;
+	padding:0px;
+	color:#444;
+}
+
+#banner_text{
+	width:650px;
+	margin-top:143px;
+	padding:20px;
+}
+
+#banner_text h2{
+	padding-top:0px;
+}
+
+#banner_text p{
+	margin-top:5px;
+}
+
+#home_message{
+	position:absolute;
+	width:400px;
+	margin:-116px 0px 0px 700px;
+	padding:7px 14px;
+}
+
+#home_message p{
+	margin-top:3px;
+}
+
+.features_icon_wrapper{
+	height:150px;
+	float:left;
+}
+
+.checkbox_label{
+	margin-left:5px;
+	font-size:13px;
+	color:#EEE;
+}
+
+#page_title{
+	font-size:3em;
+	padding-bottom:20px;
+}
+
+#tournaments_list > li{
+	padding:20px 0px;
+	font-size:2em;
+}
+
+.tournaments_list_label{
+	display:inline-block;
+	width:230px;
+	vertical-align:top;
+}
+
+.tournaments_list_players{
+	display:inline-block;
+	margin-top:0px;
+}
+
+.tournaments_list_players li{
+	padding-bottom:10px;
+}
+
+#tournaments_list input[type="text"], #tournaments_list input[type="password"], #tournaments_list textarea{
+	font-size:0.5em;
+}
+
+#tournaments_list input[type="text"], #tournaments_list input[type="password"]{
+	width:150px;
+	height:20px;
+}
+
+#tournaments_list select{
+	width:150px;
+	height:32px;
+}
+
+#tournaments_list option, #duel_form option{
+	height:32px;
+	padding-left:35px;
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+
+#tournaments_list textarea{
+	width:600px;
+	height:200px;
+	padding:5px;
+}
+
+#tournament_name{
+	padding-bottom:5px;
+}
+
+#tournament_location{
+	padding-bottom:5px;
+}
+
+#tournament_news{
+	margin:25px 0px 40px 0px;
+}
+
+#tournament_news li, .tournament_meta li{
+	padding-left:1em;
+	background:url(images/list-bullet.png) no-repeat left 10px;
+}
+
+#tournament_news li.subtitle, .tournament_meta li.subtitle{
+	background:none;
+	font-weight:bold;
+	color:#CFCFCF;
+}
+
+.tournament_meta_video{
+	width:375px;
+	height:211px;
+	margin-top:10px;
+}
+
+.tournament_group_name{
+	font-size:1.5em;
+	padding-bottom:0px;
+}
+
+.tournament_table{
+	width:690px;
+	font-size:18px;
+}
+
+.tournament_table td{
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.tournament_team_icon{
+	width:25px;
+	height:25px;
+	vertical-align:middle;
+}
+
+.tournament_table a, #tournaments_list a{
+	color:#686868;
+	text-decoration:none;
+}
+
+.tournament_table a:hover, #tournaments_list a:hover{
+	text-decoration:underline;
+}
+
+#tournament_matches{
+	line-height:1.35em;
+}
+
+#tournament_matches ul{
+	margin-bottom:20px;
+}
+
+#tournament_matches li{
+	display:inline-block;
+	width:140px;
+	margin-right:15px;
+	padding-bottom:10px;
+	vertical-align:top;
+}
+
+.tournament_match_scores{
+	margin-left:13px;
+}
+
+.tournament_edit_input{
+	width:100%;
+	font-size:1em;
+}
+
+select.tournament_edit_input{
+	height:32px;
+}
+
+input.tournament_edit_input{
+	height:26px;
+}
+
+input.tournament_edit_input, select.tournament_edit_input{
+	margin:0px 10px 10px 0px;
+	width:200px;
+}
+
+textarea.tournament_edit_input{
+	height:100px;
+}
+
+.tournament_edit_input_goals{
+	width:20px;
+	height:20px;
+	margin-top:5px;
+	text-align:center;
+}
+
+.tournament_edit_input_goals_seperator{
+	margin:0px 5px;
+}
+
+#other .button{
+	width:200px;
+	margin:0px 0px 15px 0px;
+}
+
+.meta_member_icon{
+	margin-right:5px;
+	vertical-align:middle;
+	width:20px;
+	height:20px;
+}
+
+.member_icon{
+	vertical-align:bottom;
+	margin-right:8px;
+}
+
+.member_icon_small{
+	width:28px;
+	height:28px;
+}
+
+.member_icon_big{
+	width:40px;
+	height:40px;
+}
+
+.member_note{
+	font-size:14px;
+}
+
+#duel_form select{
+	width:100px;
+	height:30px;
+}
+
+#duel_form .button{
+	margin-left:5px;
+	padding:0.6em;
+	font-size:1em;
+}
+
+.duel_favorite_probability{
+	display:inline-block;
+	width:100px;
+	margin:0px 10px 0px 60px;
+	text-align:right;
+}
+
+#ko_diagram{
+	margin-top:28px;
+}
+
+#ko_diagram li{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.ko_diagram_match{
+	margin:0px 10px 15px 0px;
+	border:1px solid #888;
+	color:#FFF;
+}
+
+.ko_diagram_team1{	
+	border-bottom:1px solid #888;
+}
+
+.ko_diagram_winner{
+	background:#EEE;
+	color:#333;
+}
+
+.ko_diagram_loser{
+	background:#333;
+}
+
+.ko_diagram_player{
+	display:inline-block;
+	width:80px;
+	padding:5px;
+	border-right:1px solid #888;
+}
+
+.ko_diagram_goals{
+	display:inline-block;
+	width:20px;
+	margin-left:-5px;
+	padding:5px;
+	text-align:center;
+}
+
+ul#tournaments_dropdown{
+	display:none;
+	width:233px;
+	margin:0px 0px 0px -1px;
+	padding:0px;
+	background:#101214;
+	border:1px solid #DDD;
+	color:#FFF;
+}
+
+#tournaments_dropdown li{
+	display:inline-block;
+	width:100%;
+	margin:0px;
+	border-top:1px solid #DDD;
+}
+
+#tournaments_dropdown li a{
+	color:#FFF;
+}
+
+#edit_members_form{
+	padding:0px;
+}
+
+#members_list{
+	margin:0px;
+}
+
+#members_list li{
+	display:inline-block;
+	width:500px;
+	margin:0px 50px 20px 0px;
+	vertical-align:top;
+}
+
+#members_list td{
+	vertical-align:top;
+}
+
+.members_name{
+	font-size:24px;
+}
+
+.members_icon{
+	width:80px;
+	height:80px;
+}
+
+.members_description{
+	margin-top:5px;
+}
+
+#members_list textarea{
+	width:390px;
+	height:70px;
+	margin-top:10px;
+	font-size:1em;
+}
+
+#tournament_info_sidebar{
+	float:right;
+}
+
+.tournament_info_box{
+	width:300px;
+	border:1px solid #212124;
+	margin:0px 0px 20px 20px !important;
+	padding:20px;
+}
+
+.tournament_info_box_image{
+	display:block;
+    margin:0 auto 20px auto;
+	height:300px;
+}
+
+.tournament_info_box_description{
+	font-size:16px;
+}
+
+.awards_years_list{
+
+}
+
+.awards_years_list li{
+	margin:10px 0px;
+}
+
+.awards_years_list_year{
+	font-size:26px;
+	color:#CFCFCF;
+}
+
+.awards{
+	margin:10px 0px 30px 0px;
+}
+
+.award{
+	position:relative;
+	display:inline-block;
+	width:150px;
+	height:135px;
+	padding:5px;
+	vertical-align:top;
+	text-align:center;
+	font-size:14px;
+}
+
+.award_icon{
+	height:100px;
+	margin-bottom:10px;
+}
+
+.award_title{
+	
+}
+
+.award_member_name{
+	line-height:2em;
+}
+
+.award_member_icon{
+	position:absolute;
+	top:70px;
+	left:68px;
+	width:24px;
+	height:24px;
+}
+
+#profile_left{
+	display:inline-block;
+	width:270px;
+	padding:10px;
+}
+
+#profile_name{
+	font-size:26px;
+	color:#AAA;
+}
+
+#profile_image{
+	width:120px;
+	height:120px;
+	margin-top:10px;
+}
+
+.profile_stats{
+	font-size:18px;
+}
+
+.profile_stats li{
+	margin-bottom:5px;
+}
+
+.profile_stats_column_label{
+	display:inline-block;
+	width:100px;
+	color:#AAA;
+}
+
+#profile_right{
+	display:inline-block;
+	margin-left:10px;
+	width:600px;
+	vertical-align:top;
+}
+
+.profile_box{
+	background:#111;
+	border:1px solid #666;
+	margin-bottom:15px;
+	padding:10px;
+	font-size:18px;
+}
+
+.profile_box_2{
+	display:inline-block;
+	width:272px;
+}
+
+.profile_box_title{
+	color:#AAA;
+}
+
+.profile_box_title_line{
+	display:inline-block;
+	margin-bottom:5px;
+}
+
+.profile_column_label{
+	display:inline-block;
+	width:115px;
+}
+
+.profile_box_items{
+	padding-bottom:5px;
+}
+
+.profile_box_items_list{
+	margin-top:5px;
+}
+
+.profile_box_items_list li{
+	display:inline-block;
+	margin:0px 10px 5px 0px;
+}
+
+.profile_box_items_list_icon{
+	height:30px;
+	margin-right:5px;
+	vertical-align:middle;
+}
+
+#records_left{
+	display:inline-block;
+	width:150px;
+}
+
+.records_form_section{
+	margin-bottom:10px;
+}
+
+.records_form_label{
+	display:block;
+	margin-bottom:10px;
+	font-size:14px;
+	color:#AAA;
+}
+
+#records_form select{
+	width:100%;
+}
+
+#records_form .button{
+	width:111px;
+	margin-top:10px;
+}
+
+#records_right{
+	display:inline-block;
+	margin:56px 0px 0px 40px;
+	width:300px;
+	vertical-align:top;
+}
+
+.record{
+	padding:6px 5px;
+	font-size:16px;
+}
+
+.record_member_place, .record_member_name{
+	vertical-align:super;
+}
+
+.record_member_place{
+	display:inline-block;
+	width:25px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.record_member_icon{
+	width:24px;
+	height:24px;
+	margin-right:2px;
+}
+
+.record_member_name{
+	text-decoration:none;
+}
+
+.record_member_name:hover{
+	text-decoration:underline;
+}
+
+.record_value{
+	float:right;
+	margin:5px 3px 0px 0px;
+}

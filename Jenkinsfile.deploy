@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+        skipDefaultCheckout()
+        ansiColor('xterm')
+    }
+    parameters {
+        string(name: 'VERSION', defaultValue: 'master')
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+                sh 'git checkout $VERSION'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'mv src docker'
+                dir('docker') {
+                    withCredentials([
+                        string(credentialsId: 'db-root-password', variable: 'DB_ROOT_PASSWORD'),
+                        string(credentialsId: 'site-password', variable: 'SITE_PASSWORD'),
+                        string(credentialsId: 'admin-password', variable: 'ADMIN_PASSWORD')
+                    ]) {
+                        sh 'docker compose build --no-cache'
+                        sh 'docker compose up -d'
+                    }
+                }
+            }
+        }
+    }
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}
