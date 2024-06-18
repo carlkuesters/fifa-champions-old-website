@@ -389,6 +389,7 @@
 				<head>
 					<title>' . $title . '</title>
 					<meta charset="utf-8">
+					<base href="/old/" />
 					<link rel="stylesheet" href="css/5grid/core.css">
 					<link rel="stylesheet" href="css/5grid/core-desktop.css">
 					<link rel="stylesheet" href="css/5grid/core-1200px.css">
