@@ -55,9 +55,8 @@
 				var playersCount = prompt(\'Spieleranzahl eingeben:\', \'8\');
 				if (playersCount) {
 					window.location = \'create_tournament.php?players=\' + playersCount;
-				} else {
-					return false;
 				}
+                return false;
 			">Turnier erstellen</a>
 		';
 	}
