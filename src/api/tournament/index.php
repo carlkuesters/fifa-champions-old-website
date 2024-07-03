@@ -8,11 +8,20 @@
 	$returnedTournament = new stdClass();
     $returnedTournament->id = intval($tournament->id);
     $returnedTournament->type = $tournament->type;
-    $returnedTournament->location = ($tournament->locationid ? $locations[$tournament->locationid]->name : null);
+    $returnedTournament->location = null;
+    if ($tournament->locationid) {
+        $location = $locations[$tournament->locationid];
+
+        $returnedLocation = new stdClass();
+        $returnedLocation->id = intval($location->id);
+        $returnedLocation->name = $location->name;
+        $returnedTournament->location = $returnedLocation;
+    }
     $returnedTournament->date = intval($tournament->date);
 
     $tournamentPlayerRows = $db->sendQuery("
         SELECT
+          tournaments_teams.id as id,
           tournaments_teams.playerid as playerId,
           teams.id as teamId,
           teams.name as teamName
@@ -23,6 +32,7 @@
     $returnedTournament->players = array();
     foreach ($tournamentPlayerRows as $tournamentPlayerRow) {
         $returnedTournamentPlayer = new stdClass();
+        $returnedTournamentPlayer->id = intval($tournamentPlayerRow->id);
         $returnedTournamentPlayer->playerId = intval($tournamentPlayerRow->playerId);
         $returnedTournamentPlayer->team = new stdClass();
         $returnedTournamentPlayer->team->id = intval($tournamentPlayerRow->teamId);
@@ -36,7 +46,9 @@
         $metaInfo = parseMetaText($metaRow->text);
 
         $returnedMetaEntry = new stdClass();
+        $returnedMetaEntry->id = intval($metaRow->text);
         $returnedMetaEntry->playerId = ($metaRow->playerid ? intval($metaRow->playerid) : null);
+        $returnedMetaEntry->sourceText = $metaRow->text;
         $returnedMetaEntry->text = $metaInfo->text;
         $returnedMetaEntry->youtubeVideoId = $metaInfo->youtubeVideoId;
 
